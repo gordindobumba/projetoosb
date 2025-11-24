@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Apadecida\\Cadastro\\Cadastro.csproj": {}
+    "D:\\Users\\Luiz\\Área de Trabalho\\projetoosb\\Cadastro\\Cadastro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Apadecida\\Cadastro\\Cadastro.csproj": {
+    "D:\\Users\\Luiz\\Área de Trabalho\\projetoosb\\Cadastro\\Cadastro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Apadecida\\Cadastro\\Cadastro.csproj",
+        "projectUniqueName": "D:\\Users\\Luiz\\Área de Trabalho\\projetoosb\\Cadastro\\Cadastro.csproj",
         "projectName": "Cadastro",
-        "projectPath": "C:\\Users\\Apadecida\\Cadastro\\Cadastro.csproj",
+        "projectPath": "D:\\Users\\Luiz\\Área de Trabalho\\projetoosb\\Cadastro\\Cadastro.csproj",
         "packagesPath": "C:\\Users\\Apadecida\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Apadecida\\Cadastro\\obj\\",
+        "outputPath": "D:\\Users\\Luiz\\Área de Trabalho\\projetoosb\\Cadastro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Apadecida\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -44,6 +44,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Isopoh.Cryptography.Argon2": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.0, )"

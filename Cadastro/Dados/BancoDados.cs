@@ -7,7 +7,8 @@ namespace Cadastro.Data
     {
         public BancoDados(DbContextOptions<BancoDados> options) : base(options) {}
 
-        public DbSet<User> Users { get; set; }
-        public DbSet<Sessao> Sessoes { get; set; }
+        public DbSet<User> Users {get; set;}
+        public DbSet<Sessao> Sessoes {get; set;}
+        public DbSet<CódigoSenha> CodigosSenha {get; set;}
     }
 }
