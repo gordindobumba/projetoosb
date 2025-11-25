@@ -11,6 +11,7 @@ builder.Services.AddDbContext<BancoDados>(options =>
 
 // ---------- SERVIÇOS ----------
 builder.Services.AddScoped<Autenticador>();
+builder.Services.AddScoped<ServiçoEmail>();
 
 // ---------- SWAGGER ----------
 builder.Services.AddEndpointsApiExplorer();
@@ -59,17 +60,13 @@ app.MapPost("/esqueci-senha", async(EsqueciSenhaDTO dto, Autenticador aut) =>
 {
    var codigo = await aut.GerarCodigo(dto.Email);
    
-   return Results.Ok(new
-   {
-       mensagem = "Se o e-mail existir, um código foi enviado para ele.",
-       codigo = codigo
-   });
+   return Results.Ok(new {msg = codigo});
 });
 
 app.MapPost("/resetar-senha", async (ReiniciarSenhaDTO dto, Autenticador auth) =>
 {
-    var msg = await auth.ReiniciarSenha(dto.Codigo, dto.Senha);
-    return Results.Ok(msg);
+    var resultado = await auth.ReiniciarSenha(dto.Codigo, dto.Senha);
+    return Results.Ok(new {msg = resultado});
 });
 
 app.Run();

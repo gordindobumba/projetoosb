@@ -9,10 +9,12 @@ namespace Cadastro.Servicos
     public class Autenticador
     {
         private readonly BancoDados banco;
+        private readonly ServiçoEmail servico;
 
-        public Autenticador(BancoDados db)
+        public Autenticador(BancoDados db, ServiçoEmail servicoEmail)
         {
             banco = db;
+            servico = servicoEmail;
         }
 
         // ------------------- CADASTRAR -------------------
@@ -121,9 +123,9 @@ namespace Cadastro.Servicos
         public async Task<string> GerarCodigo(string email)
         {
             var user = await banco.Users.FirstOrDefaultAsync(u => u.Email == email);
-            if(user == null) return "Se o email estiver cadastro, um código foi enviado.";
+            if(user == null) return "Se o email estiver cadastrado, um código foi enviado.";
 
-            string codigo = Guid.NewGuid().ToString("N");
+            string codigo = Guid.NewGuid().ToString("N").Substring(0, 10).ToUpper();
 
             var codigoRecuperacao = new CódigoSenha
             {
@@ -133,9 +135,23 @@ namespace Cadastro.Servicos
                 Usado = false
             };
 
+            string link = $"https://teste.com/resetar-senha?token={codigo}";
+
+            string corpo = $@"
+                <h2>Recuperação de Senha</h2>
+                <p>Use o código abaixo para redefinir sua senha:</p>
+                <h3>{codigo}</h3>
+                <p>Ou clique no link:</p>
+                <a href=""{link}"">{link}</a>
+                <p>Este código expira em 15 minutos.</p>
+            ";
+
+            await servico.EnviarEmail(email, "Recuperar Senha", corpo);
+            
             banco.CodigosSenha.Add(codigoRecuperacao);
             await banco.SaveChangesAsync();
-            return codigo;
+            
+            return "Se o email estiver cadastrado, um código será enviado à ele.";
         }
         
         public async Task<string> ReiniciarSenha(string codigo, string NovaSenha)
