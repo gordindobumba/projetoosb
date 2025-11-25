@@ -119,7 +119,6 @@ namespace Cadastro.Servicos
         }
 
         // --------------- RECUPERAR SENHA ---------------
-
         public async Task<string> GerarCodigo(string email)
         {
             var user = await banco.Users.FirstOrDefaultAsync(u => u.Email == email);
