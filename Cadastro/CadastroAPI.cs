@@ -63,7 +63,7 @@ app.MapPost("/esqueci-senha", async(EsqueciSenhaDTO dto, Autenticador aut) =>
    return Results.Ok(new {msg = codigo});
 });
 
-app.MapPost("/resetar-senha", async (ReiniciarSenhaDTO dto, Autenticador auth) =>
+app.MapPost("/reiniciar-senha", async (ReiniciarSenhaDTO dto, Autenticador auth) =>
 {
     var resultado = await auth.ReiniciarSenha(dto.Codigo, dto.Senha);
     return Results.Ok(new {msg = resultado});
