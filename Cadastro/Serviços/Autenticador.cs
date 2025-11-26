@@ -134,14 +134,10 @@ namespace Cadastro.Servicos
                 Usado = false
             };
 
-            string link = $"https://teste.com/resetar-senha?token={codigo}";
-
             string corpo = $@"
                 <h2>Recuperação de Senha</h2>
                 <p>Use o código abaixo para redefinir sua senha:</p>
                 <h3>{codigo}</h3>
-                <p>Ou clique no link:</p>
-                <a href=""{link}"">{link}</a>
                 <p>Este código expira em 15 minutos.</p>
             ";
 
