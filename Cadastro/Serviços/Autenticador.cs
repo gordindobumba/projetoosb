@@ -24,7 +24,7 @@ namespace Cadastro.Servicos
                 return "E-mail inválido.";
 
             if (!ValidadorSenha.SenhaValida(dto.Senha))
-                return "Senha fraca. Use 8+ caracteres, número, letra maiúscula e símbolo.";
+                return "Formato de senha inválido. A senha deve ter no mínimo 8 caracteres, 1 número, 1 letra maiúscula e 1 símbolo. Tente novamente.";
 
             if (await banco.Users.AnyAsync(u => u.Email == dto.Email))
                 return "E-mail já cadastrado.";
@@ -106,7 +106,7 @@ namespace Cadastro.Servicos
                 if(!HashSegurança.VerificarSenha(senhaAtual, usuario.Senha)) return "Senha atual incorreta. Tente novamente.";
 
                 if(!ValidadorSenha.SenhaValida(senhaNova)) 
-                return "Nova senha inválida. Lembre-se que a senha deve ter no mínimo 8 caracteres, 1 número, 1 letra maiúscula e 1 caractere especial. Tente novamente.";
+                return "Nova senha inválida. Lembre-se que a senha deve ter no mínimo 8 caracteres, 1 número, 1 letra maiúscula e 1 símbolo. Tente novamente.";
 
                 usuario.Senha = HashSegurança.HashSenha(senhaNova);
                 alterou = true;
@@ -163,7 +163,8 @@ namespace Cadastro.Servicos
 
             if(usuario == null) return "Usuário não encontrado.";
 
-            if(!ValidadorSenha.SenhaValida(NovaSenha)) return "Formato de senha inválido. A senha deve ter no mínimo 8 caracteres, 1 número, 1 letra maiúscula e 1 caractere especial. Tente novamente.";
+            if(!ValidadorSenha.SenhaValida(NovaSenha)) 
+            return "Formato de senha inválido. A senha deve ter no mínimo 8 caracteres, 1 número, 1 letra maiúscula e 1 símbolo. Tente novamente.";
             
             usuario.Senha = HashSegurança.HashSenha(NovaSenha);
             registro.Usado = true;
