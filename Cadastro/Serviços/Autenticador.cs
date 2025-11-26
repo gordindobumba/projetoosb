@@ -11,9 +11,9 @@ namespace Cadastro.Servicos
         private readonly BancoDados banco;
         private readonly ServiçoEmail servico;
 
-        public Autenticador(BancoDados db, ServiçoEmail servicoEmail)
+        public Autenticador(BancoDados bd, ServiçoEmail servicoEmail)
         {
-            banco = db;
+            banco = bd;
             servico = servicoEmail;
         }
 
