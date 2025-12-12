@@ -1,6 +1,6 @@
+using Cadastro.Servicos;
 using Cadastro.Data;
 using Cadastro.DTOs;
-using Cadastro.Servicos;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
