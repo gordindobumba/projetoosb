@@ -20,7 +20,11 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 app.UseSwagger();
-app.UseSwaggerUI();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cadastro API");
+    c.RoutePrefix = string.Empty; // Swagger é a home page
+});
 
 // ----------- ENDPOINT: CADASTRAR -----------
 app.MapPost("/cadastrar", async(CadastrarDTO dto, Autenticador aut) =>
