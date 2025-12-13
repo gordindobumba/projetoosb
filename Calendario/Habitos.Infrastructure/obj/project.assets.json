@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\Luiz\\Área de Trabalho\\Calendario\\Calendário\\Habitos.Infrastructure\\Habitos.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Users\\Luiz\\Área de Trabalho\\projetoosb\\Calendario\\Habitos.Infrastructure\\Habitos.Infrastructure.csproj",
       "projectName": "Habitos.Infrastructure",
-      "projectPath": "D:\\Users\\Luiz\\Área de Trabalho\\Calendario\\Calendário\\Habitos.Infrastructure\\Habitos.Infrastructure.csproj",
+      "projectPath": "D:\\Users\\Luiz\\Área de Trabalho\\projetoosb\\Calendario\\Habitos.Infrastructure\\Habitos.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Apadecida\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\Luiz\\Área de Trabalho\\Calendario\\Calendário\\Habitos.Infrastructure\\obj\\",
+      "outputPath": "D:\\Users\\Luiz\\Área de Trabalho\\projetoosb\\Calendario\\Habitos.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Apadecida\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -70,11 +70,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Users\\Luiz\\Área de Trabalho\\Calendario\\Calendário\\Habitos.Application\\Habitos.Application.csproj": {
-              "projectPath": "D:\\Users\\Luiz\\Área de Trabalho\\Calendario\\Calendário\\Habitos.Application\\Habitos.Application.csproj"
+            "D:\\Users\\Luiz\\Área de Trabalho\\projetoosb\\Calendario\\Habitos.Application\\Habitos.Application.csproj": {
+              "projectPath": "D:\\Users\\Luiz\\Área de Trabalho\\projetoosb\\Calendario\\Habitos.Application\\Habitos.Application.csproj"
             },
-            "D:\\Users\\Luiz\\Área de Trabalho\\Calendario\\Calendário\\Habitos.Domain\\Habitos.Domain.csproj": {
-              "projectPath": "D:\\Users\\Luiz\\Área de Trabalho\\Calendario\\Calendário\\Habitos.Domain\\Habitos.Domain.csproj"
+            "D:\\Users\\Luiz\\Área de Trabalho\\projetoosb\\Calendario\\Habitos.Domain\\Habitos.Domain.csproj": {
+              "projectPath": "D:\\Users\\Luiz\\Área de Trabalho\\projetoosb\\Calendario\\Habitos.Domain\\Habitos.Domain.csproj"
             }
           }
         }

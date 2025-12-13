@@ -7,29 +7,22 @@ namespace Habitos.Application.RegrasDeNegocio;
 public class GetCalendarioMensal
 {
     private readonly IntRepositorioHabito re;
+    private readonly IntRepositorioHabitoCompleto rec;
     private readonly CalendarioServico ca;
 
-    public GetCalendarioMensal(IntRepositorioHabito repositorio, CalendarioServico calendario)
+    public GetCalendarioMensal(IntRepositorioHabito repositorio, CalendarioServico calendario, IntRepositorioHabitoCompleto repositorioCompleto)
     {
         re = repositorio;
         ca = calendario;
+        rec = repositorioCompleto;
     }
 
-    public async Task<CalendarioMensalDTO> Sincronizar(int ano, int mes)
+    // Retorna o calendário feito em CalendarioServico
+    public async Task<CalendarioMensalDTO> Assincronizar(int ano, int mes)
     {
-        var habitos = await re.GetAllAsync();
-        var dias = new List<DiaCalendarioDTO>();
+        var habitos = await re.GetHabitosDoMes();
+        var completos = await rec.GetHabitosCompletosDoMes(ano, mes);
 
-        int totalDias = DateTime.DaysInMonth(ano, mes);
-
-        for(int d = 1; d <= totalDias; d++)
-        {
-            DateTime data = new DateTime(ano, mes, d);
-
-            var ocorrendo = habitos.Where(h => ca.Ocorrencia(h, data)).Select(h => h.Nome).ToList();
-            dias.Add(new DiaCalendarioDTO(d, ocorrendo));
-        }
-
-        return new CalendarioMensalDTO(ano, mes, dias);
+        return ca.GerarCalendarioMensal(ano, mes, habitos, completos);
     }
 }

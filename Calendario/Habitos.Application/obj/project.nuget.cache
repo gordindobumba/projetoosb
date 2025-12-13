@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s/d3wFn97XA=",
+  "dgSpecHash": "S8O7KBBLR3o=",
   "success": true,
-  "projectFilePath": "D:\\Users\\Luiz\\Área de Trabalho\\Calendario\\Calendário\\Habitos.Application\\Habitos.Application.csproj",
+  "projectFilePath": "D:\\Users\\Luiz\\Área de Trabalho\\projetoosb\\Calendario\\Habitos.Application\\Habitos.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Apadecida\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.21\\microsoft.netcore.app.ref.8.0.21.nupkg.sha512",
     "C:\\Users\\Apadecida\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.21\\microsoft.windowsdesktop.app.ref.8.0.21.nupkg.sha512",

@@ -5,6 +5,6 @@ namespace Habitos.Application.Interface
 {
     public interface IntRepositorioHabito
     {
-        Task<List<Habito>> GetAllAsync();
+        Task<List<Habito>> GetHabitosDoMes();
     }
 }

@@ -7,6 +7,6 @@ namespace Habitos.Infrastructure.Repositorio
 {
     public class HabitoRepositorio : IntRepositorioHabito
     {
-        public Task<List<Habito>> GetAllAsync() => Task.FromResult(BDTeste.Habitos);
+        public Task<List<Habito>> GetHabitosDoMes() => Task.FromResult(BDTeste.Habitos);
     }
 }

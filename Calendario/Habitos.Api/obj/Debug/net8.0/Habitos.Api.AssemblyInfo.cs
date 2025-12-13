@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Habitos.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4838ab67bb96e175b640e3e937607616a2ac62b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Habitos.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Habitos.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
