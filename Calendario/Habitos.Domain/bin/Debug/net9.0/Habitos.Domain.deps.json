@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Habitos.Domain/1.0.0": {
+        "runtime": {
+          "Habitos.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Habitos.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

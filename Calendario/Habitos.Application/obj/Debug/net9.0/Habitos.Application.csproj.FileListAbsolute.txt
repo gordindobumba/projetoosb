@@ -1,0 +1,16 @@
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\bin\Debug\net9.0\Habitos.Application.deps.json
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\bin\Debug\net9.0\Habitos.Application.dll
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\bin\Debug\net9.0\Habitos.Application.pdb
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\bin\Debug\net9.0\Habitos.Domain.dll
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\bin\Debug\net9.0\Habitos.Domain.pdb
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\obj\Debug\net9.0\Habitos.Application.csproj.AssemblyReference.cache
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\obj\Debug\net9.0\Habitos.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\obj\Debug\net9.0\Habitos.Application.AssemblyInfoInputs.cache
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\obj\Debug\net9.0\Habitos.Application.AssemblyInfo.cs
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\obj\Debug\net9.0\Habitos.Application.csproj.CoreCompileInputs.cache
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\obj\Debug\net9.0\Habitos.Application.sourcelink.json
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\obj\Debug\net9.0\Habitos..A0B50966.Up2Date
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\obj\Debug\net9.0\Habitos.Application.dll
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\obj\Debug\net9.0\refint\Habitos.Application.dll
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\obj\Debug\net9.0\Habitos.Application.pdb
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Application\obj\Debug\net9.0\ref\Habitos.Application.dll

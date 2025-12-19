@@ -11,6 +11,6 @@ public record DiaCalendarioDTO(
     string Cor // nome ou valor hexadecimal
 );
 
-// Um record (registro) é similar a uma classe, porém é imutável e pode ser comparado 
-// com valores ao invés de variáveis de referência.
-// Ajuda na simplicidade de transferência de dados.
+// Um record (registro) em C# é uma estrutura similar a uma struct em C.
+// Usar um record ao invés de uma classe para um DTO ajuda 
+// na simplicidade de transferência de dados.

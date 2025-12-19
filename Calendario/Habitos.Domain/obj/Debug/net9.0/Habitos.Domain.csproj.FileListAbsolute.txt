@@ -1,0 +1,12 @@
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Domain\bin\Debug\net9.0\Habitos.Domain.deps.json
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Domain\bin\Debug\net9.0\Habitos.Domain.dll
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Domain\bin\Debug\net9.0\Habitos.Domain.pdb
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Domain\obj\Debug\net9.0\Habitos.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Domain\obj\Debug\net9.0\Habitos.Domain.AssemblyInfoInputs.cache
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Domain\obj\Debug\net9.0\Habitos.Domain.AssemblyInfo.cs
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Domain\obj\Debug\net9.0\Habitos.Domain.csproj.CoreCompileInputs.cache
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Domain\obj\Debug\net9.0\Habitos.Domain.sourcelink.json
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Domain\obj\Debug\net9.0\Habitos.Domain.dll
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Domain\obj\Debug\net9.0\refint\Habitos.Domain.dll
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Domain\obj\Debug\net9.0\Habitos.Domain.pdb
+D:\Users\Luiz\Área de Trabalho\projetoosb\Calendario\Habitos.Domain\obj\Debug\net9.0\ref\Habitos.Domain.dll
